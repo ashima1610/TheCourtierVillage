@@ -13,9 +13,12 @@ Dynamic Cart: Users can add items to the cart, update quantities, and remove ite
 Form Validation: JavaScript-based form validations using regular expressions ensure accurate and secure user input.
 
 # Technologies Used
-# HTML: Used for creating the structure and content of the website.
-# CSS: Applied for styling and layout design, making the website visually appealing.
-# JavaScript: Utilized for implementing dynamic features, cart functionalities, and form validations.
+# HTML:
+Used for creating the structure and content of the website.
+# CSS: 
+Applied for styling and layout design, making the website visually appealing.
+# JavaScript: 
+Utilized for implementing dynamic features, cart functionalities, and form validations.
 
 # How to Use
 
