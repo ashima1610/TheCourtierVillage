@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    letter-spacing: 0.12rem;
+}
+
+.wrapper{
+    width: 100vw;
+    height: auto;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#navbar{
+    height: 4.5rem;
+    background-color: rgba(7, 7, 36, 0.954);
+    letter-spacing: 0.13rem;
+    font-size: 1.2rem;   
+    font-weight: 600;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgb(0,0,0,0.6);
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+
+#nav a{
+    height: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+}
+
+#nav a:hover, #nav a.active{
+    text-shadow : 0.03rem 0 0.1rem whitesmoke;
+    color: rgb(184, 129, 223);
+}
+
+#nav a i:hover{
+    transform: scale(1.2);
+}
+
+#navbar a img{
+    height: 60%;
+    margin-left: 2rem;
+    margin-top: 0.9rem;
+    filter: drop-shadow(0px 0px 0.5rem rgb(184, 129, 223));
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+    padding-top: 1.5rem;
+    padding-right: 1.3rem;    
+}
+
+#nav li{
+    display: inline;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+#nav li a.active::after,
+#nav li a:hover::after{
+    content: "";
+    width: 35%;
+    height: 0.2rem;
+    background: rgb(184, 129, 223);
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+
+}
+
+
+/*Home Page*/
+#hero{
+    background-image: url(images/heroImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 50% right 0;
+    height: 95vh;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0 0 0.6rem rgb(0,0,0,0.6);
+}
+
+#heroText{
+    margin-left: 3rem;
+    padding-top: 22%;
+}
+
+#hero h1{
+    font-size: 3.5rem;
+    color: rgb(184, 129, 223);
+    text-shadow: 0px 0px 3px rgb(0,0,0);
+    padding-bottom: 0.3rem;
+}
+
+#hero h4{
+    /* color: rgb(184, 129, 223); */
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 3px rgb(0,0,0, 0.9);
+    letter-spacing: 0.2rem;
+}
+
+#hero h2{
+    font-size: 3rem;
+    text-shadow: 0px 0px 3px rgb(0,0,0, 0.6);
+}
+
+#hero button{
+    padding: 0.6rem;
+    border-radius: 0.25rem;
+    margin-top: 0.6rem;
+    /* margin-bottom: 2rem; */
+    background-color: rgba(184, 129, 223, 0.944);
+    font-size: 1rem;
+    font-weight: bolder;
+    color: black;
+    font-weight: 800;
+    border: 0.02rem solid black;
+    letter-spacing: 0.05rem;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 0.5rem;
+    z-index: 1;
+    border: 0;
+}
+#hero button::before {
+    content: "";
+    position: absolute;
+    /* background-color: rgba(225, 205, 234, 0.917); */
+    background-color: whitesmoke;
+    top: 0;
+    left : 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    border-radius: 0.5rem;
+  }
+
+  #hero button:hover::before {
+    transform: scaleX(1);
+  }
+
+#hero button:hover{
+    box-shadow: 0px 0px 10px rgb(0,0,0, 0.3);
+    cursor:pointer;
+}
+
+#features{
+    width: 100%;
+    height: auto;
+    padding: 4rem 2rem;
+    background-image: linear-gradient(to right, whitesmoke, rgba(228, 208, 237, 0.898) 80%);
+}
+
+#features #featureBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    /* padding-top: 3rem;
+    padding-bottom: 3rem; */
+}
+
+.featureCard{
+    height: 12rem;
+    width: 12rem;
+    padding: 0.2rem 0.2rem;
+    box-shadow: 5px 5px 34px rgb(0,0,0, 0.3);
+    /* background-color: rgba(245, 245, 245, 0.963); */
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+    color: black;
+    align-content: space-evenly;
+    border-radius: 0.5rem;
+}
+
+.featureCard img{
+      height: 80%;
+      width: 100%;
+}
+
+.featureCard h4{
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: rgba(228, 208, 237, 0.853);
+    padding-top: 0.4rem;
+    height: 2rem;
+}
+
+#featureFoot{
+    padding-top: 3rem;
+    text-align: center;
+}
+
+#featureFoot h1{
+    font-size: 3rem;
+}
+
+#products{
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    /* background: rgba(7, 7, 36, 0.954); */
+    background-image: linear-gradient(to right, whitesmoke, rgba(228, 208, 237, 0.898) 80%);
+}
+
+#product-container{
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.product-card{
+    width: 16rem;
+    height: 18rem;
+    padding: 2rem 0.8rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+    background-color: whitesmoke;
+    /* background-image:linear-gradient(to right, rgba(15, 15, 71, 0.275), rgba(128, 128, 148, 0.915)); */
+    
+
+    transition: all 0.3s ease;
+    border-radius: 0.4rem;
+}
+
+.product-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.product-card .product-image{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+
+}
+
+/* .product-card .cart{
+    float: right;
+    height: 15%;
+    width: 15%;
+    background-color: rgba(225, 205, 234, 0.917);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    transform: translateY(0.6rem);
+}
+
+.product-card .cart:hover{
+    transform: scale(1.1);
+} */
+.product-card h6{
+    font-size: 0.5rem;
+}
+.product-card h4{
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+}
+.product-card h3{
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+}
+
+.product-card .ratings{
+    float: left;
+    width: 55%;
+    height: 8%;
+}
+
+#discounts, #contact-head{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    background-image: url(images/pexels-jakub-novacek-924824.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+#discounts{
+    margin: 3rem 0;
+}
+
+#discounts #discount-text, #contact-head #contact-head-text{
+    text-align: center;
+}
+
+#discounts #discount-text h1{
+   font-size: 2.5rem;
+   margin: 1rem auto;
+}
+
+#contact-head #contact-head-text h1{
+    font-size: 2.5rem;
+    margin: 0.5rem auto;
+}
+
+#discounts #discount-text h1 span{
+    color: rgba(225, 205, 234, 0.925);
+}
+
+#discounts #discount-text #discount-button{
+    padding: 1rem;
+    /* margin-top: 1.5rem; */
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    transition: all 0.3s ease;
+    border: 0;
+    position: relative;
+    z-index: 1;
+}
+
+#discount-button::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(225, 205, 234, 0.917);
+    top: 0;
+    left : 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    border-radius: 0.5rem;
+  }
+
+  #discount-button:hover::before {
+    transform: scaleX(1);
+  }
+
+#discounts #discount-text #discount-button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.957);
+}
+
+.banners{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    letter-spacing: 0.5rem;
+    margin: 3rem 0;
+}
+
+.banners h1{
+    font-size: 2rem;
+    margin: 1.0rem 0 0.5rem 0;
+}
+
+.banners h4{
+    margin-bottom: 0.5rem;
+}
+
+.sm-banners{
+    width: 46%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    text-align: left;
+    padding: 3rem;
+}
+
+.bg-banners{
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    text-align: left;
+    padding: 3rem;
+
+}
+
+.bg-banners p{
+    font-size: 0.5rem;
+    letter-spacing: 0.05rem;
+}
+
+
+#banner1{
+    background-image: url(images/Banners/pexels-rdne-stock-project-6192558.jpg);  
+}
+
+#banner2{
+    background-image: url(images/Banners/pexels-cottonbro-studio-5839949.jpg);
+}
+
+#bg-banner1{
+    background-image: url(images/Banners/pexels-ron-lach-7778887.jpg);
+}
+
+#bg-banner2{
+    background-image: url(images/Banners/pexels-anastasia-barth-2860996.jpg);
+}
+
+#bg-banner3{
+    background-image: url(images/Banners/pexels-cottonbro-studio-8072533.jpg);
+}
+
+#brands{
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(to right, whitesmoke, rgba(228, 208, 237, 0.898) 80%);
+    padding: 2rem 0;
+}
+
+#brands #brand-heading{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#brands #brand-heading h1{
+    font-size: 3rem;
+}
+
+#brands #logos{
+    width: 95%;
+    margin: auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 1rem;
+    background-color: whitesmoke;
+    box-shadow: 0 0 0.3rem rgb(0,0,0, 0.6);
+
+}
+
+#logos div{
+    width: 10%;
+    height: 10%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#footer{
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(6, 6, 27, 0.985), rgba(7, 7, 36, 0.875), rgba(6, 6, 27, 0.985));
+    text-align: left;
+    padding: 2rem 3rem;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+#footer a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    padding: 0.05rem;
+}
+
+#footer #contact p span{
+    font-weight: bold;
+}
+
+#footer li{
+    list-style: none;
+}
+
+#footer li a{
+    text-decoration: none;
+    font-size: 0.6rem;
+}
+
+#footer li a:hover{
+    text-decoration: underline;
+}
+
+#install img{
+    height: 4rem;
+    width: 6rem;
+}
+
+#install #payment{
+    height: 3rem;
+    width: 12rem;
+}
+
+.btn-purchase{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    transition: all 0.3s ease;
+    border: 0;
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(189, 162, 214);;
+    top: 0;
+    left : 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    border-radius: 0.5rem;
+  }
+
+.btn-purchase:hover::before {
+    transform: scaleX(1);
+  }
+
+.btn-purchase:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+
+.shop-item-button{
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.2rem;
+    background-color: rgb(189, 162, 214);
+    color: whitesmoke;
+    border: none;
+    border-radius: 50%;
+    float: right;
+}
+
+.shop-item-button:hover{
+    box-shadow: 0 0 0.3rem rgb(0,0,0, 0.6);
+}
+
+.shop-item-button img{
+      height: 100%;
+      width: 100%;
+}
+
+.my-cart{
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    background-image: linear-gradient(to right, whitesmoke, rgba(228, 208, 237, 0.898) 80%);
+}
+
+.my-cart h1{
+     padding: 3rem 0;
+     font-size: 2rem;
+     text-decoration: underline;
+}
+
+.cart-row, .cart-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap;
+    row-gap: 1rem; */
+    letter-spacing: 0.2rem;
+}
+
+.cart-header{
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 30%;
+    text-decoration: underline;
+}
+
+.cart-total{
+    margin: 2rem auto;
+    height: auto;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: rgb(189, 162, 214);
+    border-radius: 2rem;
+    box-shadow: 0 0 0.3rem rgb(0,0,0, 0.6);
+}
+
+.cart-item{
+    margin: 3rem 0;
+    height: 10vh;
+}
+
+.cart-column{
+    width: 30%;
+}
+
+.product-info img{
+    height: 90%;
+    width: 10vw;
+    object-fit: contain;
+}
+
+
+.remove{
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem;
+    /* margin-left: 5rem; */
+    background-color: rgb(189, 162, 214);
+    border: none;
+    border-radius: 2rem;
+    float: right;
+    font-weight: bold;
+    box-shadow: 0 0 0.5rem rgb(0,0,0, 0.6);
+}
+
+.cart-column img{
+    float: left;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    height: 7rem;
+    width: 7rem;
+}
+
+.cart-item-title{
+    float: right;
+    /* padding-top: 3rem;
+    padding-right: 1rem; */
+}
+
+.cart-quantity-input{
+    float: center;
+    width:3rem;
+    height: 2rem
+}
+
+.cart-quantity{
+    padding-right: 1rem;
+}
+
+#main-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-us{
+    width: 42%;
+}
+
+.contact-details{
+    text-align: left;
+    /* padding: 2rem 0 2rem 1rem; */
+}
+
+.contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#contact-list{
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+#contact-list i{
+    font-size: 1.5rem;
+}
+
+#contact-list{
+    list-style: none;
+}
+
+.contact-form{
+    text-align: center;
+    margin: 2rem auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, whitesmoke, rgba(228, 208, 237, 0.898) 80%)
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-button {
+    background-color: rgb(189, 162, 214);
+    box-shadow: 0 0 0.8rem rgb(0,0,0, 0.3);
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 0 0.5rem rgb(0,0,0, 0.6);
+
+}
+
+

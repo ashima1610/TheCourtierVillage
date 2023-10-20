@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="demostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+<body>
+    <div class="wrapper">
+        <section id="navbar" style="box-shadow: 0 0 0.6rem rgba(255, 255, 255, 0.6);">
+            <a href="#"><img src="images/mainIcon.png"></a>
+
+            <div class="navigation">
+                <ul id="nav">
+                    <li><a href="demoindex.html">Home</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact-head" style="height: 15rem;">
+            <div id="contact-head-text">
+                <h1>#let's_talk</h1><br>
+                <h4>Leave a message. We'd love to hear from you!</h4>
+            </div>
+        </section>
+
+        <section id="main-contact">
+            <div class="contact-details contact-us">
+                <p>GET IN TOUCH</p><br>
+                <h2>Visit one of our agency locations or contact us today</h2><br>
+                <p><em>Head Office</em></p>
+
+                <br>
+                <ul id="contact-list">
+                    <li><i class="ri-map-pin-line"></i> 526, Industrial Area, Andheri, Mumbai</li>
+                    <li><i class="ri-mail-line"></i> thecourtiervillage@gmail.com</li>
+                    <li><i class="ri-customer-service-line"></i> +91-7087141423/+91-8283883062</li>
+                    <li><i class="ri-time-line"></i> Mon-Sat 9:00 am to 7:00 pm </li>
+                </ul>
+            </div>
+            <div class="map contact-us">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.4021178982016!2d72.83199175920247!3d19.133867550081696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b624120ad0d3%3A0xc62901e936383923!2sIndustrial%20Area%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1697821063106!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div class="container contact-form">
+            <h1>Contact Us</h1><br>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="contact-button">Submit</button>
+            </form>
+            <div id="success-message"></div>
+        </div>
+
+        <section id="footer">
+            <div id="contact">
+                <h2>The Couture Village</h2>
+                <br><br>
+                <h2>Contact Us</h2>
+                <br>
+                <p><span></i>Address: </span>562 Wellington Road, Street 32, Andheri, Mumbai</p>
+                <p><span>Phone: </span>+91-7087141423, +91-8283883062</p>
+                <p><span>Hours: </span>9:00am to 7:00pm (Mon-Sat)</p>
+
+                <br>
+                <p>Follow Us</p>
+                <br>
+                <p>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="https://twitter.com/?lang=en-in" target="_blank"><i class="ri-twitter-line"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="ri-youtube-line"></i></a>
+                    <a href="https://www.pinterest.com/login/" target="_blank"><i class="ri-pinterest-fill"></i></a>
+                </p>
+            </div>
+
+            <div id="about">
+                <h2>About</h2><br>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div id="my-aacount">
+                <h2>My Account</h2><br>
+                <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">View Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <div id="install">
+                <h2>Install App</h2>
+                <br>
+                <p>From Apple Store or Google Play</p>
+                <img src="images/applestore.png">
+                <img src="images/googlePlay.png">
+                <br><br>
+                <p>Secure Payment Gateways</p>
+                <img src="images/paymentgateways.png" id="payment">
+            </div>
+        </section> 
+        
+        <script src="script.js"></script>
+    </div>
+    
+</body>
+</html>
